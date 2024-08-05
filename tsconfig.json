@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "packages/components/**/*.ts",
+    "packages/components/**/*.vue",
+    "vue-shim.d.ts",
+  ],
+  "exclude": ["packages/components/**/test/**"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+  ]
+}

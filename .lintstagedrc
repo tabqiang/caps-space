@@ -1,0 +1,4 @@
+{
+  "**/*": "prettier --write --ignore-unknown",
+  "packages/*": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue"
+}
