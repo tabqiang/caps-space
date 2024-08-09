@@ -1,1 +1,1 @@
-export * from "./with-install"
+export * from './vue/install';
