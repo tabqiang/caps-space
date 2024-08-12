@@ -1,17 +1,17 @@
 <template>
   <div class="row">
-    <Button>Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="success">Success</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="danger">Danger</Button>
-    <Button type="info">Info</Button>
+    <caps-space-button>Default</caps-space-button>
+    <caps-space-button type="primary">Primary</caps-space-button>
+    <caps-space-button type="success">Success</caps-space-button>
+    <caps-space-button type="warning">Warning</caps-space-button>
+    <caps-space-button type="danger">Danger</caps-space-button>
+    <caps-space-button type="info">Info</caps-space-button>
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
-<style scoped lang="scss">
+<style scoped>
 .row {
   margin-bottom: 20px;
   width: 800px;

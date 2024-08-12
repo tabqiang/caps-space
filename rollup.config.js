@@ -26,41 +26,33 @@ export default [
       }),
     ],
   },
-  //   {
-  //     input: 'packages/components/index.ts',
-  //     output: {
-  //       file: 'dist/components/index.d.ts',
-  //       format: 'es',
-  //     },
-  //     plugins: [dts()],
-  //   },
-  //   {
-  //     // 打包样式的任务
-  //     input: 'packages/theme-chalk/src/index.scss',
-  //     output: {
-  //       file: 'dist/theme-chalk/index.css',
-  //       format: 'esm',
-  //     },
-  //     plugins: [
-  //       del({
-  //         targets: 'dist/theme-chalk',
-  //       }),
-  //       postcss({
-  //         extract: true, // 单独生成一个 css 文件
-  //         minimize: true, // 压缩
-  //       }),
-  //       copy({
-  //         targets: [
-  //           {
-  //             src: 'packages/theme-chalk/package.json',
-  //             dest: 'dist/theme-chalk',
-  //           },
-  //           {
-  //             src: 'packages/theme-chalk/src/fonts/*',
-  //             dest: 'dist/theme-chalk/fonts',
-  //           },
-  //         ],
-  //       }),
-  //     ],
-  //   },
+  {
+    // 打包样式的任务
+    input: 'packages/theme-chalk/src/index.scss',
+    output: {
+      file: 'dist/theme-chalk/index.css',
+      format: 'esm',
+    },
+    plugins: [
+      del({
+        targets: 'dist/theme-chalk',
+      }),
+      postcss({
+        extract: true, // 单独生成一个 css 文件
+        minimize: true, // 压缩
+      }),
+      copy({
+        targets: [
+          {
+            src: 'packages/theme-chalk/package.json',
+            dest: 'dist/theme-chalk',
+          },
+          {
+            src: 'packages/theme-chalk/src/fonts/*',
+            dest: 'dist/theme-chalk/fonts',
+          },
+        ],
+      }),
+    ],
+  },
 ];

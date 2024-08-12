@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "A simple Vue3 + TypeScript components library, inspired by element-plus",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "pnpm -C examples dev",
     "build": "rollup -c",
@@ -35,6 +34,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.77.8",
     "typescript": "^5.5.4"
   },
   "dependencies": {
