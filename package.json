@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C examples dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
     "prepare": "husky"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@commitlint/config-conventional": "^19.2.2",
+    "@tsconfig/node18": "^18.2.4",
     "@vue/tsconfig": "^0.5.1",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.4",
