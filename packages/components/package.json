@@ -1,10 +1,12 @@
 {
-	"name": "@caps-space/components",
-	"version": "0.0.1",
-	"description": "",
-	"main": "index.ts",
-	"scripts": {},
-	"keywords": [],
-	"author": "",
-	"license": "ISC"
+  "name": "@caps-space/components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "types": "types.d.ts",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -4,6 +4,7 @@ import postcss from 'rollup-plugin-postcss';
 import del from 'rollup-plugin-delete';
 import copy from 'rollup-plugin-copy';
 import terser from '@rollup/plugin-terser';
+import { dts } from 'rollup-plugin-dts';
 
 export default [
   {
@@ -15,9 +16,7 @@ export default [
     external: ['vue'],
     plugins: [
       del({ targets: 'dist/components' }),
-      vue({
-        include: ['**/*.vue'],
-      }),
+      vue(),
       typescript({
         tsconfig: 'tsconfig.app.json',
       }),
@@ -27,6 +26,14 @@ export default [
       }),
     ],
   },
+  //   {
+  //     input: 'packages/components/index.ts',
+  //     output: {
+  //       file: 'dist/components/index.d.ts',
+  //       format: 'es',
+  //     },
+  //     plugins: [dts()],
+  //   },
   //   {
   //     // 打包样式的任务
   //     input: 'packages/theme-chalk/src/index.scss',
