@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A simple Vue3 + TypeScript components library, inspired by element-plus",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "pnpm -C examples dev",
     "build": "rollup -c",
@@ -39,6 +40,7 @@
   },
   "dependencies": {
     "@caps-space/components": "workspace:^",
+    "@caps-space/theme-chalk": "workspace:^",
     "@caps-space/utils": "workspace:^",
     "vue": "^3.4.35"
   },

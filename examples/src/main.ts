@@ -4,14 +4,13 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import CapsSpaceButton from '@caps-space/components' // 引入组件库
+import CapsSpaceButton from '@caps-space/components'
 
-// import '@caps-space/theme-chalk/src/index.scss' // 引入样式
-import '../../packages/theme-chalk/src/index.scss' // 引入样式
+import '@caps-space/theme-chalk/src/index.scss'
 
 const app = createApp(App)
 
 app.use(router)
-app.use(CapsSpaceButton) // 使用组件库
+app.use(CapsSpaceButton)
 
 app.mount('#app')

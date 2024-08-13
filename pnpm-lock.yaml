@@ -11,6 +11,9 @@ importers:
       '@caps-space/components':
         specifier: workspace:^
         version: link:packages/components
+      '@caps-space/theme-chalk':
+        specifier: workspace:^
+        version: link:packages/theme-chalk
       '@caps-space/utils':
         specifier: workspace:^
         version: link:packages/utils
