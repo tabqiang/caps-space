@@ -1,15 +1,17 @@
 {
-  "name": "@caps-space/components",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.ts",
-  "type": "module",
-  "types": "types.d.ts",
-  "scripts": {},
-  "keywords": [],
-  "peerDependencies": {
-    "vue": "^3.3.4"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "@caps-space/components",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.ts",
+    "type": "module",
+    "types": "types.d.ts",
+    "scripts": {
+        "test": "vitest"
+    },
+    "keywords": [],
+    "peerDependencies": {
+        "vue": "^3.3.4"
+    },
+    "author": "",
+    "license": "ISC"
 }
