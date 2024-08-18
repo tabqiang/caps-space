@@ -7,3 +7,6 @@ dist
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# vitepress cache
+docs/.vitepress/cache
