@@ -10,3 +10,7 @@ dist
 
 # vitepress cache
 docs/.vitepress/cache
+
+
+.nx/cache
+.nx/workspace-data

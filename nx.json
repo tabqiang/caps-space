@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "cache": true
+    }
+  },
+  "defaultBase": "main",
+  "plugins": [
+    {
+      "plugin": "@nx/rollup/plugin",
+      "options": {
+        "buildTargetName": "build"
+      }
+    }
+  ],
+  "nxCloudAccessToken": "NTgyMjNhZTUtNjU4Zi00MjUyLTk5ZWUtMDRlZmE0NWQ3YThmfHJlYWQtd3JpdGU="
+}
