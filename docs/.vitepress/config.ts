@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, type DefaultTheme } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,10 +6,10 @@ export default defineConfig({
     description: 'A Caps Space Components Doc',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: 'guide/what-is', activeMatch: '/guide/' },
-        ],
+        nav: nav(),
+        search: {
+            provider: 'local',
+        },
 
         sidebar: [
             {
@@ -24,3 +24,10 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/tabqiang/caps-space' }],
     },
 });
+
+function nav(): DefaultTheme.NavItem[] {
+    return [
+        { text: 'Home', link: '/' },
+        { text: 'Guide', link: 'guide/what-is', activeMatch: '/guide/' },
+    ];
+}
