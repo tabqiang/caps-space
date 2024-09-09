@@ -22,7 +22,6 @@
         "LICENSE"
     ],
     "devDependencies": {
-        "@changesets/cli": "^2.27.7",
         "@commitlint/config-conventional": "^19.2.2",
         "@nx/eslint": "19.6.0",
         "@nx/rollup": "19.6.0",
