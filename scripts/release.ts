@@ -5,13 +5,8 @@ import { logRecentCommits, run } from './release-utils';
 release({
     repo: 'caps-space',
     // List of options. Choice will be available in following callback as `pkg`
-    packages: [
-        'caps-space',
-        '@caps-space/components',
-        '@caps-space/theme-chalk',
-        '@caps-space/utils',
-    ],
-    toTag: (pkg, version) => (pkg === 'micro-frontend' ? `v${version}` : `${pkg}@${version}`),
+    packages: ['@caps-space/vue3', 'components', 'theme-chalk', 'utils'],
+    toTag: (pkg, version) => (pkg === '@caps-space/vue3' ? `v${version}` : `${pkg}@${version}`),
     logChangelog: pkg => logRecentCommits(pkg),
     generateChangelog: async (pkgName, version) => {
         const changelogArgs = [

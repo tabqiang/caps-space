@@ -16,7 +16,9 @@ export function run<EO extends ExecaOptions>(
 export async function getLatestTag(pkgName: string): Promise<string> {
     const pkgJson = JSON.parse(await fs.readFile(`packages/${pkgName}/package.json`, 'utf-8'));
     const version = pkgJson.version;
-    return pkgName === 'vite' ? `v${version}` : `${pkgName}@${version}`;
+    return pkgName === '@caps-space/vue3'
+        ? `v${version}`
+        : `${'@caps-space/'}${pkgName}@${version}`;
 }
 
 export async function logRecentCommits(pkgName: string): Promise<void> {
